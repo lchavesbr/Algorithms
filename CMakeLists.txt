@@ -17,7 +17,7 @@ set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Create a fake library to set cxx settings and link to propagate throught targets.
 add_library(cxx_setup INTERFACE)
 target_compile_options(cxx_setup INTERFACE -Wall -Wpedantic -Wextra)
-target_compile_features(cxx_setup INTERFACE cxx_std_20)
+target_compile_features(cxx_setup INTERFACE cxx_std_23)
 target_include_directories(cxx_setup INTERFACE ${PROJECT_SOURCE_DIR})
 
 #Check with clang-format
